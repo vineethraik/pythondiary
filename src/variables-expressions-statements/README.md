@@ -82,3 +82,24 @@ Operator|operation|example
 `*`|Multiplication|```hour*60```
 `/`|Divition|```minite/60```
 `**`|Exponentiation|```2**5```
+
+> Note:There has been a change in the division operator between Python 2.x and Python 3.x. In Python 3.x, the result of this division is a floating point result:
+>```python
+> >>> minute = 59
+> >>> minute/60
+> 0.9833333333333333
+>```
+> The division operator in Python 2.0 would divide two integers and truncate the
+result to an integer:
+>```python
+> >>> minute = 59
+> >>> minute/60
+> 0
+>```
+> To obtain the same answer in Python 3.0 use floored ( // integer) division.
+>```python
+> >>> minute = 59
+> >>> minute//60
+> 0
+>```
+
