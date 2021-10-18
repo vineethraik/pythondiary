@@ -16,7 +16,7 @@ These values belong to different types: **1** is an integer, **3.14** is an floa
 
 ***
 
-## _Variables_
+## 1._Variables_
 A variable is a name that refers to a value.
 
 An assignment statement creates new variables and gives them values:  
@@ -53,13 +53,32 @@ uses keywords to recognize the structure of the program, and they cannot be used
   
 ***
 
-## _Expressions_
-1. ### a
-2. ### b
-3. ### c
 
 
-## _Statements_
-1. ### a
-2. ### b
-3. ### c
+## 2. _Statements_  
+A statement is a unit of code that the Python interpreter can execute
+
+When you type a statement in interactive mode, the interpreter executes it and displays the result,  
+if there is one.  
+![](../../resources/images/statement_example.PNG)
+
+A script usually contains a sequence of statements. If there is more than one statement,  
+the results appear one at a time as the statements execute.  
+For example, the script:  
+![](../../resources/images/script_example.PNG)
+
+Produces the output:  
+![](../../resources/images/script_example_result.PNG)
+
+>**Note:** Assignment statement produces no output
+
+## 3. _Operators and operands_
+Operators are special symbols that represent computations like addition and multiplication.  
+The values the operator is applied to are called operands.  
+Operator|operation|example
+--------|---------|-------
+`+`|Addition|```20+3```
+`-`|Subtraction|```hour-1```
+`*`|Multiplication|```hour*60```
+`/`|Divition|```minite/60```
+`**`|Exponentiation|```2**5```
