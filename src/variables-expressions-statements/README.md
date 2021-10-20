@@ -223,3 +223,14 @@ x1q3z9afd = 12.50
 x1q3p9afd = x1q3z9ahd * x1q3z9afd
 print(x1q3p9afd)
 ```
+The Python interpreter sees all three of these programs as exactly the same but humans  
+see and understand these programs quite differently. Humans will most quickly understand  
+the intent of the second program because the programmer has chosen variable names that  
+reflect their intent regarding what data will be stored in each variable.
+
+***
+
+## Exercises
+1. Ex1
+2. sdv
+3. sdv
