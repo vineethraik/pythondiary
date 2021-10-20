@@ -10,7 +10,7 @@ These values belong to different types: **1** is an integer, **3.14** is an floa
 
 **type** Statement can specify type of value  
 
-![](../../resources/images/type_example.PNG)
+<img src="../../resources/images/type_example.PNG" height="100">
 
 >**Note:** any value enclosed in quotation mark is considered as string
 
@@ -20,15 +20,15 @@ These values belong to different types: **1** is an integer, **3.14** is an floa
 A variable is a name that refers to a value.
 
 An assignment statement creates new variables and gives them values:  
-![](../../resources/images/assignment_examples.PNG)  
+<img src="../../resources/images/assignment_examples.PNG" height="60">  
 This example makes three assignments. The first assigns a string to a new variable named **message**.  
 the second assigns the integer 10 to **hour**. the third assigns the (approximate) value of π to **pi**.  
 
 To display the value of a variable, you can use a print statement:  
-![](../../resources/images/assignment_print_examples.PNG)
+<img src="../../resources/images/assignment_print_examples.PNG" height="100">
 
 The type of a variable is the type of the value it refers to:  
-![](../../resources/images/assignment_examples_type.PNG)
+<img src="../../resources/images/assignment_examples_type.PNG" height="100">
 
 <br>
 
@@ -41,7 +41,7 @@ The **underscore** character (_) can appear in a name. It is often used in names
 such as **my_name** or **time_at_start**. Variable names can start with an underscore character
 
 If you give a variable an illegal name, you get a syntax error:  
-![](../../resources/images/illigal_variable_name_error.PNG)
+<img src="../../resources/images/illigal_variable_name_error.PNG" height="80">
 
 Also some names are not allowed to use as variable names They are called **Keywords** The interpreter  
 uses keywords to recognize the structure of the program, and they cannot be used as variable names.
@@ -60,28 +60,44 @@ A statement is a unit of code that the Python interpreter can execute
 
 When you type a statement in interactive mode, the interpreter executes it and displays the result,  
 if there is one.  
-![](../../resources/images/statement_example.PNG)
+<img src="../../resources/images/statement_example.PNG" height="40">
 
 A script usually contains a sequence of statements. If there is more than one statement,  
 the results appear one at a time as the statements execute.  
 For example, the script:  
-![](../../resources/images/script_example.PNG)
+<img src="../../resources/images/script_example.PNG" height="80">
 
 Produces the output:  
-![](../../resources/images/script_example_result.PNG)
+<img src="../../resources/images/script_example_result.PNG" height="60">
+
 
 >**Note:** Assignment statement produces no output
 
+***
 ## 3. _Operators and operands_
 Operators are special symbols that represent computations like addition and multiplication.  
 The values the operator is applied to are called operands.  
-Operator|operation|example
+Operator|Operation|Example
 --------|---------|-------
 `+`|Addition|```20+3```
 `-`|Subtraction|```hour-1```
 `*`|Multiplication|```hour*60```
 `/`|Divition|```minite/60```
 `**`|Exponentiation|```2**5```
+
++ Modulus operator  
+The modulus operator works on integers and yields the remainder when the first  
+operand is divided by the second  
+Example:  
+<img src="../../resources/images/modulus_operator_example.PNG" height="40">
+
++ String operations  
+The + operator works with strings, but it is not addition in the mathematical sense.  
+Instead it performs concatenation, which means joining the strings by linking them  
+end to end.  
+Example:  
+<img src="../../resources/images/string_concat_example.PNG" height="40">
+
 
 > Note:There has been a change in the division operator between Python 2.x and Python 3.x. In Python 3.x, the result of this division is a floating point result:
 >```python
@@ -101,5 +117,109 @@ result to an integer:
 > >>> minute = 59
 > >>> minute//60
 > 0
->```
+>```  
 
+***
+## _4. Expressions_
+An expression is a combination of values, variables, and operators.  
+A value all by itself is considered an expression, and so is a variable
+
+Examples:  
+<img src="../../resources/images/expression_example.PNG" height="60">
+
+If you type an expression in interactive mode, the interpreter evaluates it and displays the result:  
+<img src="../../resources/images/expression_example_interpreter.PNG" height="40">
+
+>**Note:** In a script expression all by itself doesn't do anything
+
+***
+
+## _4. Order of operations_
+When more than one operator appears in an expression, the order of evaluation depends on  
+the rules of precedence. For mathematical operators, Python follows mathematical convention.  
+
++ Parentheses have the highest precedence and can be used to force an expression to evaluate  
+in the order you want. 
++ Exponentiation has the next highest precedence.
++ Multiplication and Division have the same precedence i.e third precedence.
++ Addition and Subtraction have the least precedence.
++ Operators with the same precedence are evaluated from left to right
+
+***
+## _4.Acquiring input from user_
+Python provides a built-in function called input that gets input from  the keyboard.  
+When this function is called, the program stops and waits for the user to type something.  
+When the user presses Return or Enter, the program resumes and input returns what the  
+user typed as a string.  
+<img src="../../resources/images/input_example.PNG" height="80">
+
+
+Before getting input from the user, it is a good idea to print a prompt telling the user  
+what to input.  
+<img src="../../resources/images/input_with_prompt.PNG" height="100">
+
+>**Note:** The sequence \n at the end of the prompt represents a newline.which is a special character that causes a line break.
+
+If you expect the user to type an integer, you can try to convert the return value to  
+int using the int() function:  
+<img src="../../resources\images\input_int_example.PNG" height="100">
+
+>**Note:** Using other then string containing only numbers on **int()** function will get you an error
+
+***
+
+## _5.Comments_
+Comments are notes to the program to explain it in natural language.  
+They dont interfere with the execution of program.
+
+In python comments start with **#** symbol  
+```python
+# compute the percentage of the hour that has elapsed
+percentage = (minute * 100) / 60
+```
+comments can also be placed at the end of lines
+```python
+percentage = (minute * 100) / 60 # percentage of an hour
+```
+
+Comments are most useful when they document non-obvious features of the code.  
+It is reasonable to assume that the reader can figure out what the code does;  
+it is much more useful to explain why
+
+This comment is redundant with the code and useless:  
+```python
+v = 5       # assign 5 to v
+```
+
+This comment contains useful information that is not in the code:  
+```python
+v = 5       # velocity in meters/second.
+
+```
+***
+
+## _6.Choosing mnemonic variable names_
+As long as you follow the simple rules of variable naming, and avoid reserved words,  
+you have a lot of choice when you name your variables. In the beginning, this choice can  
+be confusing both when you read a program and when you write your own programs
+
+Example:  
+```python
+#Example 1
+a = 35.0
+b = 12.50
+c = a * b
+print(c)
+
+#Example 2
+hours = 35.0
+rate = 12.50
+pay = hours * rate
+print(pay)
+
+#Example 3
+x1q3z9ahd = 35.0
+x1q3z9afd = 12.50
+x1q3p9afd = x1q3z9ahd * x1q3z9afd
+print(x1q3p9afd)
+```
