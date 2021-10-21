@@ -231,6 +231,16 @@ reflect their intent regarding what data will be stored in each variable.
 ***
 
 ## Exercises
-1. Ex1
-2. sdv
+1. Write a program that uses input to prompt a user for their name and then welcomes them.  
+```python
+name=input("Enter your name :")
+print("Hello "+name)
+```
+2. Write a program to prompt the user for hours and rate per hour to compute gross pay.
+```python
+hour=int(input("Enter Hours: "))
+rate=int(input("Enter Rate: "))
+pay=hur*rate
+print(pay)
+```
 3. sdv
