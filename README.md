@@ -1,4 +1,4 @@
 ## [Python Diary](https://github.com/vineethraik/pythondiary/blob/main/src/README.md)
-A road towards better Python proficiency
+A Blog featuring **ML using Python** 
 
-[Click here](https://github.com/vineethraik/pythondiary/blob/main/src/README.md)
+* ### [Python Language](https://github.com/vineethraik/pythondiary/blob/main/src/README.md)
