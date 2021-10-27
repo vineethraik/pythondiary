@@ -55,7 +55,7 @@ uses keywords to recognize the structure of the program, and they cannot be used
 
 
 
-## 2. _Statements_  
+## 2._Statements_  
 A statement is a unit of code that the Python interpreter can execute
 
 When you type a statement in interactive mode, the interpreter executes it and displays the result,  
@@ -74,7 +74,7 @@ Produces the output:
 >**Note:** Assignment statement produces no output
 
 ***
-## 3. _Operators and operands_
+## 3._Operators and operands_
 Operators are special symbols that represent computations like addition and multiplication.  
 The values the operator is applied to are called operands.  
 Operator|Operation|Example
@@ -120,7 +120,7 @@ result to an integer:
 >```  
 
 ***
-## _4. Expressions_
+## 4._Expressions_
 An expression is a combination of values, variables, and operators.  
 A value all by itself is considered an expression, and so is a variable
 
@@ -134,7 +134,7 @@ If you type an expression in interactive mode, the interpreter evaluates it and 
 
 ***
 
-## _5. Order of operations_
+## 5._Order of operations_
 When more than one operator appears in an expression, the order of evaluation depends on  
 the rules of precedence. For mathematical operators, Python follows mathematical convention.  
 
@@ -146,7 +146,7 @@ in the order you want.
 + Operators with the same precedence are evaluated from left to right
 
 ***
-## _6. Acquiring input from user_
+## 6._Acquiring input from user_
 Python provides a built-in function called input that gets input from  the keyboard.  
 When this function is called, the program stops and waits for the user to type something.  
 When the user presses Return or Enter, the program resumes and input returns what the  
@@ -168,7 +168,7 @@ int using the int() function:
 
 ***
 
-## _7. Comments_
+## 7._Comments_
 Comments are notes to the program to explain it in natural language.  
 They dont interfere with the execution of program.
 
@@ -198,7 +198,7 @@ v = 5       # velocity in meters/second.
 ```
 ***
 
-## _8. Choosing mnemonic variable names_
+## 8._Choosing mnemonic variable names_
 As long as you follow the simple rules of variable naming, and avoid reserved words,  
 you have a lot of choice when you name your variables. In the beginning, this choice can  
 be confusing both when you read a program and when you write your own programs
