@@ -146,7 +146,7 @@ in the order you want.
 + Operators with the same precedence are evaluated from left to right
 
 ***
-## _6.Acquiring input from user_
+## _6. Acquiring input from user_
 Python provides a built-in function called input that gets input from  the keyboard.  
 When this function is called, the program stops and waits for the user to type something.  
 When the user presses Return or Enter, the program resumes and input returns what the  
@@ -168,7 +168,7 @@ int using the int() function:
 
 ***
 
-## _7.Comments_
+## _7. Comments_
 Comments are notes to the program to explain it in natural language.  
 They dont interfere with the execution of program.
 
@@ -198,7 +198,7 @@ v = 5       # velocity in meters/second.
 ```
 ***
 
-## _8.Choosing mnemonic variable names_
+## _8. Choosing mnemonic variable names_
 As long as you follow the simple rules of variable naming, and avoid reserved words,  
 you have a lot of choice when you name your variables. In the beginning, this choice can  
 be confusing both when you read a program and when you write your own programs
