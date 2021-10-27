@@ -243,4 +243,3 @@ rate=int(input("Enter Rate: "))
 pay=hur*rate
 print(pay)
 ```
-3. sdv
